@@ -1,0 +1,279 @@
+@font-face {
+  font-family: Aliens and Cows;
+  src: url(fonts/aliens\ and\ cows_trial.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color:rgba(255, 255, 255, 0.5);
+  position: fixed;
+  backdrop-filter: blur(3rem);
+}
+
+header h2 {
+  position: absolute;
+  padding: 3px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 3px;
+  font-family: Aliens and Cows;
+  color: #357378;
+}
+
+header h2:hover {
+  color: #b23026;
+}
+
+
+header h2 span {
+  color: #b23026;
+}
+
+header h2 span:hover {
+  color: #357378;
+}
+
+
+ul {
+  width: auto;
+  float: right;
+  margin-top: 8px;
+}
+
+li {
+  display: inline-block;
+  /*padding: 10px 3px; /*top and bottom padding is 10px, right and left is 3px*/
+  padding-right: 2rem;
+  margin-top: 2px;
+}
+
+a { 
+  text-align: center;
+  color: #357378;
+  text-decoration: none;
+  font-family: 'montserrat', sans-serif;
+  font-size: 0.9vw;
+}
+
+a:hover {
+  color: #b23026;
+  font-weight: bold;
+  transition: 0s;
+  text-decoration: none;
+
+}
+
+.btn-primary {
+  font-size: 0.9vw;
+  background-color: #357378;
+  border-color: transparent;
+  color:white;
+}
+
+.btn-primary:hover {
+  background-color: #b23026;
+  border-color: transparent;
+}
+
+
+
+/* BODY */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* BACKGROUND */
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #C9FFBF, #FFAFBD);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* GLASS MORPHISM */
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(255,255,255,0.7), 
+    rgba(255,255,255,0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    margin-top: 3rem;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1, .circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(255,255,255,0.8), 
+    rgba(255,255,255,0.3)
+    );
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+  top: 4%;
+  right: 15%;
+}
+
+.circle2 {
+  bottom: -3%;
+  left: 10%;
+}
+
+/* DASHBOARD - LEFT SIDE */
+
+.user img {
+  width: 90px;
+}
+
+.user h6 {
+  margin-top: 10px;
+  color: #357378;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.user p {
+  color: gray;
+  margin-top: -5px;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.community img {
+  width: 100px;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(255,255,255,0.5), 
+    rgba(255,255,255,0.3)
+    );
+    border-radius: 2rem;
+}
+
+.community {
+  background: linear-gradient(to right top, #C9FFBF, #FFAFBD);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  display: flex;
+}
+
+.community h5 {
+  margin-top: 34px;
+  /*opacity: 0.8;*/
+}
+
+/* RIGHT SIDE */
+
+.startup {
+  flex: 2; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.welcome h1 {
+  color: rgba(53, 115, 120, 0.9);
+  font-weight: 1000;
+  /*margin-top: 2rem;*/
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.welcome p {
+  color: rgba(104, 104, 104, 0.8);
+  font-size: small;
+  letter-spacing: 0.8px;
+}
+
+.welcome hr.rounded {
+  margin-top: 5rem;
+  border-top: 2px solid rgb(206, 206, 206);
+  border-radius: 5px;
+}
+
+.btn-light {
+  margin-top: 5rem;
+  width: 40%;
+  padding: 10px;
+  border-radius: 50px;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(255,255,255,0.5), 
+    rgba(255,255,255,0.3)
+    );
+    font-size: x-small;
+  color:#357378;
+}
+
+.btn-light:hover {
+  background: linear-gradient(
+    to right bottom, 
+    rgba(255,255,255,0.8), 
+    rgba(255,255,255,0.3)
+    );
+  width: 50%;
+  color: #927775;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.btn-light img {
+  width: 8px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255,255,255,0.2);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.credits p {
+  font-family: 'montserrat', sans-serif;
+  color: gray;
+  font-size: 0.6vw;
+  margin-top: 10px;
+}
